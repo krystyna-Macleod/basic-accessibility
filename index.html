@@ -8,9 +8,14 @@
 </head>
 <body>
 
+  <ul class="skip-links">
+    <li><a href="#main">Jump to main content</a></li>
+    <li><a href="#nav">Jump to navigation</a></li>
+  </ul>
+
   <header role="banner">
     <h1>Pangolin</h1>
-    <nav role="navigation">
+    <nav role="navigation" id="nav" tabindex="0">
       <ul>
         <li><a href="#description">Description</a></li>
         <li><a href="#behaviour"></a>Behaviour</li>
@@ -19,7 +24,7 @@
     </nav>
   </header>
 
-  <main>
+  <main role="main" id="main" tabindex="0">
     <section id="description" tabindex="0">
       <h2>Description</h2>
     </section>
@@ -34,7 +39,7 @@
 
   </main>
 
-  <footer>
+  <footer role="contentinfo">
     <small>© 1821 Pangolin</small>
   </footer>
 
